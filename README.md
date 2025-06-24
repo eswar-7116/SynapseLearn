@@ -10,6 +10,7 @@
 [![Neon](https://img.shields.io/badge/Cloud-Neon-00E599?logo=neon)](https://neon.tech/)
 [![Google Gemini](https://img.shields.io/badge/AI-Gemini-4285F4?logo=google)](https://aistudio.google.com/app/apikey)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/93f143f2-1802-4268-b3d9-f1d9123e5fc1/deploy-status)](https://app.netlify.com/projects/synapse-learn/deploys)
 
 ---
 
@@ -108,7 +109,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🌐 Live Demo
 
-* 🔗 **Live URL:** [SynapseLearn](https://synapse-learn.vercel.app/)
+* 🔗 **Live URL:** [SynapseLearn](https://synapse-learn.netlify.app/)
 * 📽️ **Loom Walkthrough:** [View Demo](https://loom.com/share/your-demo-video)
 
 ---
