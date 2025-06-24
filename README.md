@@ -110,7 +110,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ## 🌐 Live Demo
 
 * 🔗 **Live URL:** [SynapseLearn](https://synapse-learn.netlify.app/)
-* 📽️ **Loom Walkthrough:** [View Demo](https://loom.com/share/your-demo-video)
+* 📽️ **Loom Walkthrough:** [View Demo](https://www.loom.com/share/e6af3c2a5e454ca89dfedde05aba084b?sid=e5685c77-ddfd-4797-b9cf-b63ba6fe0932)
 
 ---
 
