@@ -108,7 +108,7 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🌐 Live Demo
 
-* 🔗 **Live URL:** [https://your-vercel-project-url.vercel.app](https://your-vercel-project-url.vercel.app)
+* 🔗 **Live URL:** [SynapseLearn](https://synapse-learn.vercel.app/)
 * 📽️ **Loom Walkthrough:** [View Demo](https://loom.com/share/your-demo-video)
 
 ---
