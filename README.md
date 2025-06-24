@@ -29,7 +29,7 @@
 - **Database:** PostgreSQL via [Neon](https://neon.tech/)
 - **ORM:** [Drizzle ORM](https://orm.drizzle.team/)
 - **AI API:** [Google Gemini](https://aistudio.google.com/app/apikey)
-- **Deployment:** [Vercel](https://vercel.com/)
+- **Deployment:** [Netlify](https://netlify.com/)
 
 ---
 
@@ -98,11 +98,11 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 🚀 Deployment
 
-### ✅ Deploy on Vercel
+### ✅ Deploy on Netlify
 
 1. Push your code to GitHub.
-2. Import your GitHub repo into [Vercel](https://vercel.com/new).
-3. Set up your environment variables in Vercel dashboard.
+2. Import your GitHub repo into [Netlify](https://netlify.com/new).
+3. Set up your environment variables in Netlify dashboard.
 4. Click **Deploy** and you're live!
 
 ---
