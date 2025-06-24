@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ClerkProvider, UserButton, SignedIn, SignedOut, SignInButton, SignUpButton } from '@clerk/nextjs';
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,12 +25,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <header className="sticky top-0 z-30 w-full bg-white/80 dark:bg-black/80 border-b border-gray-200 dark:border-slate-800 backdrop-blur flex items-center justify-between px-6 py-3">
+            <Link href="/" className="text-2xl font-bold tracking-tight text-blue-600 dark:text-blue-400">SynapseLearn</Link>
+            <div className="flex items-center gap-4">
+              <SignedIn>
+                <UserButton afterSignOutUrl="/" appearance={{ elements: { avatarBox: 'w-9 h-9' } }} />
+              </SignedIn>
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition">Sign in</button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <button className="px-4 py-2 rounded bg-gray-200 dark:bg-slate-700 text-gray-800 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-slate-600 transition">Sign up</button>
+                </SignUpButton>
+              </SignedOut>
+            </div>
+          </header>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
