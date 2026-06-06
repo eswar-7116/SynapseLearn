@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
 
     const { topic } = parsed.data;
     const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
+    const GEMINI_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
 
     const prompt = `You are an AI tutor helping users learn by doing.
 Given a topic, generate exactly 5 short, actionable tasks for a beginner to learn the topic.
